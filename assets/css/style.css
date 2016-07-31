@@ -540,12 +540,12 @@ header {
 .parallax-mask {
   position: absolute;
   display: block;
-  top: 20%;
+  top: 15%;
   bottom: 0;
   left: 0;
   right: 0;
   width: 55%;
-  height: 50%;
+  height: 75%;
   background: rgba(36, 40, 47, 0.5);
   z-index: 1;
 }
@@ -553,19 +553,24 @@ header {
 .page-banner {
   position: relative;
   margin-top: 80px;
-  height: 600px;
+  height: auto;
   padding-top: 91px;
   background: url(../img/boyClassroom_1920x600.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .page-banner .section-name {
   position: relative;
   z-index: 10;
+  top: -50px;
 }
 .page-banner .section-name h2,
 .page-banner .section-name h5 {
   font-family: 'amaticbold';
-  font-size: 58px;
-  line-height: 68px;
+  font-size: 56px;
+  line-height: 66px;
   margin-top: 55px;
   color: #ffffff;
 }
@@ -579,6 +584,22 @@ header {
   margin-top: 80px;
   }
 }
+@media screen and (max-width: 500px) {
+  .parallax-mask {
+  top: 25%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  }
+  .page-banner .section-name {
+    text-align: center;
+    top: 0;
+  }
+}
+
+
 /* Home Form */
 .home-form {
   height: auto;
