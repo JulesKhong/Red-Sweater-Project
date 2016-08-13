@@ -1248,6 +1248,13 @@ li.donateBtn a {
 #home-slider .tp-bullet.selected {
   background: #ae2422;
 }
+/* owl change-slider */
+#owl-change .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* intro */
 .intro-wrapper {
   height: 520px;
